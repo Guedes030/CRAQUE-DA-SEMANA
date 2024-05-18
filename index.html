@@ -56,7 +56,7 @@
     }
 @media(max-width:400px){
 .premiodif{
-    height: 500vh;
+    height: 530vh;
 }
 
     }
@@ -238,6 +238,16 @@ width: 70vw;
     
         
 }
+#box{
+    box-shadow: 1px 1px 1rem 5px white;
+    padding: 1rem;
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+}
+#box:hover{
+    transform:scale(1.1);
+}
 
 </style>
 <body>
@@ -366,13 +376,37 @@ width: 70vw;
                                                         das brigas ideológicas mostrou que realmente não merecia figurar entre os principais dessa semana, seus lances não foram tão impressionantes aos olhos do público e acabou então ficando em último lugar, porém, embora dentro de campo não tenha feito muito pela competição, fora de campo gerou bastante relevância, trazendo críticas e conseguindo 
                                                         apoio de diversos companheiros, então ele foi sim um cadete muito importante para a relevância dessa competição. Semana encerrada, porém a edição SEMANA 21 PROMETE MUITO MAIS. O Cadete Bonitinho, atual líder do quadro de medalhas, vê sua hegemonia ameaçada pelo fato de nem ter conseguido participar nessa semana e para não perder a liderança já vem se destacando ao longo do período analisado e o público já o cita como forte concorrente para semana que vem. Continua...
                    </h1>
-                                                    <br>
+<br><br>
+                   <div id="box">
+                    <h1>ESCUTE EM ÁUDIO</h1>
+                   </div>
+                                                
+                   <audio src="WhatsApp Ptt 2024-05-18 at 14.59.29 (3) (mp3cut.net) (1).mp3" id="audio"></audio>
                                                
-                                            </div>
-                                            <br>
-                                            </div>
+</div>
+     <br>
+     </div>
                                         
                                         
                                                     </section>
+<script>
+    var n = 1
+    car= 2;
+    var caixa = document.getElementById("box")
+    var audio= document.getElementById("audio")
+    caixa.addEventListener('click',function(){
+        n+=1
+console.log(n)
+if(n%car==0){
+    audio.play()
+
+}else{
+    audio.pause()
+
+    audio.currentTime=0
+}
+
+    })
+</script>                                                 
 </body>
 </html>
